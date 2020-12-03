@@ -12,4 +12,12 @@ File.open("employees.txt", "r") do |file|
     # puts file.readchar()
     puts "=========================="
     for line in file.readlines()
+        puts line
+    end
 end
+
+puts "=========================="
+
+file = File.open("employees.txt")
+puts file.read
+file.close
